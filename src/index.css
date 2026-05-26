@@ -1,0 +1,105 @@
+/* Light theme (default) */
+:root,
+[data-theme='light'] {
+  --text: #64748b;
+  --text-h: #0f172a;
+  --text-muted: #94a3b8;
+  --bg: #eef2f7;
+  --bg-gradient: linear-gradient(160deg, #eef2f7 0%, #e8eef8 50%, #f1f5f9 100%);
+  --surface: #ffffff;
+  --surface-hover: #f8fafc;
+  --border: #e2e8f0;
+  --border-hover: #cbd5e1;
+  --accent: #2563eb;
+  --accent-soft: rgba(37, 99, 235, 0.1);
+  --accent-border: rgba(37, 99, 235, 0.35);
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.07), 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 4px 16px rgba(15, 23, 42, 0.1), 0 8px 24px rgba(15, 23, 42, 0.06);
+
+  --kpi-total: #2563eb;
+  --kpi-total-bg: rgba(37, 99, 235, 0.08);
+  --kpi-approved: #16a34a;
+  --kpi-approved-bg: rgba(22, 163, 74, 0.08);
+  --kpi-rejected: #dc2626;
+  --kpi-rejected-bg: rgba(220, 38, 38, 0.08);
+  --kpi-collection: #d97706;
+  --kpi-collection-bg: rgba(217, 119, 6, 0.08);
+
+  --status-approved: #22c55e;
+  --status-rejected: #ef4444;
+  --status-pending: #f59e0b;
+
+  --chart-grid: #e2e8f0;
+  --chart-tick: #64748b;
+  --chart-tooltip-bg: #ffffff;
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --text: #94a3b8;
+  --text-h: #f1f5f9;
+  --text-muted: #64748b;
+  --bg: #0b1120;
+  --bg-gradient: linear-gradient(160deg, #0b1120 0%, #0f172a 50%, #111827 100%);
+  --surface: #151d2e;
+  --surface-hover: #1a2438;
+  --border: #2a3548;
+  --border-hover: #3d4f6a;
+  --accent: #60a5fa;
+  --accent-soft: rgba(96, 165, 250, 0.12);
+  --accent-border: rgba(96, 165, 250, 0.4);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.45), 0 8px 32px rgba(96, 165, 250, 0.08);
+
+  --kpi-total: #60a5fa;
+  --kpi-total-bg: rgba(96, 165, 250, 0.12);
+  --kpi-approved: #4ade80;
+  --kpi-approved-bg: rgba(74, 222, 128, 0.1);
+  --kpi-rejected: #f87171;
+  --kpi-rejected-bg: rgba(248, 113, 113, 0.1);
+  --kpi-collection: #fbbf24;
+  --kpi-collection-bg: rgba(251, 191, 36, 0.1);
+
+  --status-approved: #4ade80;
+  --status-rejected: #f87171;
+  --status-pending: #fbbf24;
+
+  --chart-grid: #2a3548;
+  --chart-tick: #94a3b8;
+  --chart-tooltip-bg: #1a2438;
+}
+
+:root {
+  --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --transition: 0.2s ease;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-gradient);
+  min-height: 100svh;
+  transition: background var(--transition), color var(--transition);
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100svh;
+}
